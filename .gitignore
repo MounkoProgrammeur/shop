@@ -1,0 +1,12 @@
+venv/
+# Base de données locale
+db.sqlite3
+
+# Fichiers secrets
+secrets.json
+
+# Django static / media
+staticfiles/
+media/
+
+.env

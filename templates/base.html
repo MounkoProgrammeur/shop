@@ -1,0 +1,76 @@
+{% load static %}
+{% load tz %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>HIFNOREE</title>
+</head>
+<body>
+
+   <div class="navbar">
+  <div class="logo"><span>HIFNO</span>REE</div>
+
+ 
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fa fa-bars"></i>
+  </div>
+
+  <div class="nav" id="nav">
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Mes Produits</a></li>
+      <li><a href="#">À propos</a></li>
+      <li><a href="#">Nous Contacter</a></li>
+    </ul>
+  </div>
+</div>
+
+    {% block content %}
+
+    {% endblock %}
+<br><br>
+   <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Mes Produits</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Nous Contacter</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <div class="socials">
+                    <a href="#" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 HIFNOREE - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js'%}"></script>
+</body>
+</html>
